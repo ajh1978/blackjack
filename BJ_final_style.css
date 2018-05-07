@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cardTable {
+  color: brown;
+  background-image: url("pics/cardtable.jpg");
+  background-size: cover;
+  display: flex;
+  width: 90%;
+  height: 75%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.hands {
+  flex-direction: column;
+  width: 90%;
+  max-width: 300px;
+
+}
+
+.dealerHand {
+  margin-bottom: 10px;
+  height: 150px;
+  display: flex;
+  background-color: none;
+}
+
+.playerHand {
+  margin: 5px;
+  height: 150px;
+  display: flex;
+  background-color: none;
+}
+
+.card {
+  background-image: url("pics/cardbottom.jpg");
+  background-size: cover;
+  border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+  -moz-box-shadow:1px 3px 3px 2px black;
+    -webkit-box-shadow:1px 3px 3px 2px black;
+    box-shadow:1px 3px 3px 2px black;
+  font-size: 20pt;
+  float: left;
+  width:  3.75em;
+  height: 100%;
+  padding: .1em;
+  margin-right: -2em;
+ font-family: serif;
+}
+
+.cardback {
+  background-image: url("pics/cardback.jpg");
+  background-size: cover;
+  border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+  -moz-box-shadow:1px 3px 3px 2px black;
+    -webkit-box-shadow:1px 3px 3px 2px black;
+    box-shadow:1px 3px 3px 2px black;
+  font-size: 20pt;
+  float: left;
+  width:  3.75em;
+  height: 150px;
+  padding: .1em;
+  margin-right: -2em;
+ font-family: serif;
+}
+
+.buttons {
+  padding:5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 300px;
+}
+
+.button {
+  font-family: "Palatino Linotype", "Book Antiqua", serif;
+  border: 2px solid #802b00;
+    -moz-box-shadow:1px 3px 3px 2px black;
+      -webkit-box-shadow:1px 3px 3px 2px black;
+      box-shadow:1px 3px 3px 2px black;
+    color: #ffffcc;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius:4px;
+      -moz-border-radius:4px;
+      -webkit-border-radius:4px;
+}
+
+#newGameBtn {
+  background: radial-gradient(#ffaa80, #802b00);
+  width: 90%;
+  color: #331100;
+}
+
+#dealBtn {
+  background: radial-gradient(#00aaff, #002233);
+  width: 90%;
+  color: #00111a;
+}
+
+#hitBtn {
+  background: radial-gradient(#003300, #008000);
+  width: 45%;
+  color: #ffcc00;
+}
+
+#standBtn {
+  background: radial-gradient(#330000, #800000);
+  width: 45%;
+  color: #ffcc00;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.infoArea {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  text-align: center;
+  margin: 5px 0;
+  background-color: rgb(255, 214, 51, 0.7);
+  height: 80px;
+}
+
+.info {
+  font-family: "Palatino Linotype", "Book Antiqua", serif;
+  color: #332900;
+  text-align: center;
+}
+
+.decker {
+  display: flex;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  text-align: center;
+  margin: 5px 0;
+  background-color: rgb(255, 214, 51, 0.5);
+}
+
+label {
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    color: #332900;
+    display: inline-block;
+    float: left;
+    padding: 2px;
+}
+
+input {
+  font-family: "Palatino Linotype", "Book Antiqua", serif;
+  color: #332900;
+  text-align: center;
+  padding: 5px;
+  width: 50px;
+  background: none;
+  border: none;
+  float: left;
+}
+
+p {
+  font-family: "Palatino Linotype", "Book Antiqua", serif;
+  color: #332900;
+}
+
+.statistics {
+  display: flex;
+  padding: 1px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  text-align: center;
+  margin: 5px 0;
+  background-color: rgb(255, 214, 51, 0.5);
+}
+
+body
+{
+    font-family: Times, serif;
+    font-size: 15px;
+}
+
+.club, .spade
+{
+    color: rgb(26, 9, 0, 0.8);
+    font-weight: bold;
+}
+
+.heart, .diamond
+{
+    color: rgb(204, 0, 0, 0.8);
+    font-weight: bold;
+}

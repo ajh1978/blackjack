@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>&diams; &spades; Blackjack &hearts; &clubs;</title>
+  <link rel="stylesheet" type="text/css" href="BJ_final_style.css">
+</head>
+
+<body>
+
+  <div class='cardTable'>
+
+    <div class='hands'>
+
+    <p id="dHand">Dealer's Hand</p>
+    <div class='dealerHand' id="dCards"></div>
+    <div class='infoArea'>
+      <div class="info" id="info">Welcome to the Blackjack!<br>Press 'New Game' to begin</div>
+    </div>
+    <div class='playerHand' id="pCards"></div>
+    <p id="pHand">Player's Hand</p>
+
+      <div class="buttons">
+          <input type=button class="button" id="newGameBtn" value="New Game" onClick="newGame()">
+
+      </div>
+      <div class="buttons">
+        <input type=button class="button disabled" id="dealBtn" value="Deal" onClick="deal()" disabled="true">
+          <input type=button class="button disabled" id="hitBtn" value="Hit" onClick="hit()" disabled="true">
+          <input type=button class="button disabled" id="standBtn" value="Stand" onClick="stand()" disabled="true">
+      </div>
+
+      <div class="decker">
+    <input type="number" id="deckNumber" value="8" min="1" max="10"></input>
+    <label for="deckNumber">Number of decks</label>
+    <input type="text" id="cardsLeft" value="416"></input>
+    <label for="cardsLeft">Cards left</label>
+    </div>
+    <div class="statistics" id="stats">
+      <label for="gamesPlayed">Games played</label>
+      <input type="text" id="gamesPlayed" value="0"></input>
+
+      <label for="wins">Wins</label>
+      <input type="text" id="wins" value="0"></input>
+
+      <label for="ties">Ties</label>
+      <input type="text" id="ties" value="0"></input>
+
+      <label for="losses">Losses</label>
+      <input type="text" id="losses" value="0"></input>
+    </div>
+    </div>
+</div>
+
+<script src="BJ_final_script.js"></script>
+
+<audio autoplay>
+</audio>
+
+</body>
+
+</html>
